@@ -7,9 +7,11 @@ function App() {
   const [datetime ,setDatetime]=useState('');
   const [description ,setDescription]=useState('');
 
-  function addnewtransaction()
+  function addnewtransaction(ev)
   {
-    
+    ev.preventDefault();
+    const url=process.env.REACT_APP_API_URL;
+    console.log(url);
   }
   return (
     <main>
